@@ -1,0 +1,132 @@
+<html>
+
+<title>EJS</title>
+
+<head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+<div class="container">
+<br><br>
+<div class="row">
+	<div class="col-lg-3 col-lg-offset-3">
+		Record Number Search <br> <br>
+		<input type="text" id="recnum"></input> <br> <br>
+		<button onclick="recnum_search()">Search</button>
+	</div>
+	<div class="col-lg-3">
+		Version Tag Search <br> <br>
+		<input type="text" id="vertag"></input> <br> <br>
+		<button onclick="vertag_search()">Search</button>
+	</div>
+</div>
+<br>
+<br>
+<div class="row" id="search_tickets">
+
+</div>
+<br>
+<br>
+<div class="row" id="search_deploys">
+</div>
+
+</div>
+
+<script>
+
+function recnum_search() {
+	var params = "key=" + document.getElementById('recnum').value;
+	get('http://127.0.0.1:8000/recnum_search', params, function(text) {
+		console.log(text);
+		var json_obj = JSON.parse(text);
+		var dat = json_obj['dat'];
+		var dat1 = json_obj['dat1'];
+		update(dat, dat1);
+		
+	});
+}
+
+function update(dat, dat1) {
+	var h;
+		if (dat.length == 0) h = "<div class='col-lg-4 col-lg-offset-4'>No Results Found in Deploys</div>";
+		else {
+			h = 
+				"<div class='col-lg-4 col-lg-offset-4'>" + 
+				"<table class='table table-striped'>" +
+					"<tr>" +
+						"<th>Host Name</th>" +
+						"<th>Date</th>" +
+						"<th>Time</th>" +
+						"<th>OS User</th>" +
+					"</tr>";
+			for (var i=0;i<dat.length;++i) {
+				h += "<tr>" +
+						"<td>" + dat[i]["hostname"] + "</td>" +
+						"<td>" + dat[i]["date"] + "</td>" +
+						"<td>" + dat[i]["time"] + "</td>" +
+						"<td>" + dat[i]["osuser"] + "</td>" +
+					"</tr>";
+			}
+			h += "</table></div>";
+		}
+		document.getElementById('search_deploys').innerHTML = h;
+		if (dat1.length == 0) h = "<div class='col-lg-4 col-lg-offset-4'>No Results Found in Tickets</div>";
+		else {
+			h = 
+				"<div class='col-lg-4 col-lg-offset-4'>" + 
+				"<table class='table table-striped'>" +
+					"<tr>" +
+						"<th>Platform</th>" +
+						"<th>Date</th>" +
+						"<th>Time</th>" +
+					"</tr>";
+			for (var i=0;i<dat1.length;++i) {
+				h += "<tr>" +
+						"<td>" + dat1[i]["platform"] + "</td>" +
+						"<td>" + dat1[i]["date"] + "</td>" +
+						"<td>" + dat1[i]["time"] + "</td>" +
+					"</tr>";
+			}
+			h += "</table></div>";
+		}			
+		document.getElementById('search_tickets').innerHTML = h;
+		
+}
+
+function vertag_search() {
+	var params = "key=" + document.getElementById('vertag').value;
+	get('http://127.0.0.1:8000/vertag_search', params, function(text) {
+		console.log(text);
+		var json_obj = JSON.parse(text);
+		var dat = json_obj['dat'];
+		var dat1 = json_obj['dat1'];
+		update(dat, dat1);
+		
+	});
+}
+
+
+function get(url, params, doneCallBack) {
+	var xhr = new XMLHttpRequest();
+	xhr.onreadystatechange = handleStateChange;
+	url += "?" + params;
+	console.log(url);
+	xhr.open("GET", url, true);
+	xhr.send();
+
+	function handleStateChange() {
+		if (xhr.readyState === 4) {
+			doneCallBack(xhr.status == 200 ? xhr.responseText : null);
+		}
+	}
+}
+
+</script>
+
+</body>
+
+</html>
