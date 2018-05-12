@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.5.59, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 5.7.22, for osx10.13 (x86_64)
 --
--- Host: mysql.erich.com    Database: ejs
+-- Host: localhost    Database: ejs
 -- ------------------------------------------------------
--- Server version	5.7.21
+-- Server version	5.7.22
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -40,8 +40,33 @@ CREATE TABLE `deploys` (
 
 LOCK TABLES `deploys` WRITE;
 /*!40000 ALTER TABLE `deploys` DISABLE KEYS */;
-INSERT INTO `deploys` VALUES (1231,'tag','host','dir','pdb','ej','2018-01-01','00:09:00'),(1221,'tag','host','dir','pdb','ej','2018-01-01','00:09:00'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:00'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1224,'tag','host','dir','pdb','ej','2018-01-01','00:09:21'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1224,'tag','host','dir','pdb','ej','2018-01-01','00:09:21'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1224,'tag','host','dir','pdb','ej','2018-01-01','00:09:21'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1224,'tag','host','dir','pdb','ej','2018-01-01','00:09:21'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1224,'tag','host','dir','pdb','ej','2018-01-01','00:09:21');
+INSERT INTO `deploys` VALUES (1231,'tag','host','dir','pdb','ej','2018-01-01','00:09:00'),(1221,'tag','host','dir','pdb','ej','2018-01-01','00:09:00'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:00'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1224,'tag','host','dir','pdb','ej','2018-01-01','00:09:21'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1224,'tag','host','dir','pdb','ej','2018-01-01','00:09:21'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1224,'tag','host','dir','pdb','ej','2018-01-01','00:09:21'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1224,'tag','host','dir','pdb','ej','2018-01-01','00:09:21'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1224,'tag','host','dir','pdb','ej','2018-01-01','00:09:21'),(1234,'MYTAX_1.0','APACHE','MYTAX','MYTAX','ej','2018-05-07','14:00:00'),(12345,'TAXING_1.2.3.4','APACHE','TAXING','/VOL1','EJ','2018-05-08','10:57:42'),(55,'TAXING_1.2.3.4','APACHE','TAXING','/VOL1','EJ','2018-05-08','11:01:21'),(55,'TAXING_1.2.3.4','APACHE','TAXING','/VOL1','EJ','2018-05-08','13:48:33');
 /*!40000 ALTER TABLE `deploys` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tickets`
+--
+
+DROP TABLE IF EXISTS `tickets`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tickets` (
+  `RecordNum` int(11) DEFAULT NULL,
+  `VerTag` varchar(25) DEFAULT NULL,
+  `Platform` varchar(25) DEFAULT NULL,
+  `Date` date DEFAULT NULL,
+  `Time` time DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tickets`
+--
+
+LOCK TABLES `tickets` WRITE;
+/*!40000 ALTER TABLE `tickets` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tickets` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -53,4 +78,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-04-24  1:27:47
+-- Dump completed on 2018-05-12  8:32:04
