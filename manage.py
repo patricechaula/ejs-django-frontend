@@ -13,9 +13,3 @@ if __name__ == "__main__":
             "forget to activate a virtual environment?"
         ) from exc
     execute_from_command_line(sys.argv)
-
-
-
-
-# sorry to type here. But I just wana say task is completed. Could you pl
-# please leave me 5 stars also

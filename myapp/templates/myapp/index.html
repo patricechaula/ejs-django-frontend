@@ -52,40 +52,52 @@ function recnum_search() {
 
 function update(dat, dat1) {
 	var h;
-		if (dat.length == 0) h = "<div class='col-lg-4 col-lg-offset-4'>No Results Found in Deploys</div>";
+		if (dat.length == 0) h = "<div class='col-lg-4 col-lg-offset-3'>No Results Found in Deploys</div>";
 		else {
 			h = 
-				"<div class='col-lg-4 col-lg-offset-4'>" + 
+				"<div class='col-lg-4 col-lg-offset-3'>" + 
 				"<table class='table table-striped'>" +
 					"<tr>" +
+						"<th>Record Number</th>" +
+						"<th>Version Tag</th>" +
 						"<th>Host Name</th>" +
 						"<th>Date</th>" +
 						"<th>Time</th>" +
 						"<th>OS User</th>" +
+						"<th>PDB</th>" +
+						"<th>Dir</th>" +
 					"</tr>";
 			for (var i=0;i<dat.length;++i) {
 				h += "<tr>" +
+						"<td>" + dat[i]["recordnum"] + "</td>" +
+						"<td>" + dat[i]["vertag"] + "</td>" +
 						"<td>" + dat[i]["hostname"] + "</td>" +
 						"<td>" + dat[i]["date"] + "</td>" +
 						"<td>" + dat[i]["time"] + "</td>" +
 						"<td>" + dat[i]["osuser"] + "</td>" +
+						"<td>" + dat[i]["pdb"] + "</td>" +
+						"<td>" + dat[i]["dir"] + "</td>" +
 					"</tr>";
 			}
 			h += "</table></div>";
 		}
 		document.getElementById('search_deploys').innerHTML = h;
-		if (dat1.length == 0) h = "<div class='col-lg-4 col-lg-offset-4'>No Results Found in Tickets</div>";
+		if (dat1.length == 0) h = "<div class='col-lg-4 col-lg-offset-3'>No Results Found in Tickets</div>";
 		else {
 			h = 
-				"<div class='col-lg-4 col-lg-offset-4'>" + 
+				"<div class='col-lg-4 col-lg-offset-3'>" + 
 				"<table class='table table-striped'>" +
 					"<tr>" +
+						"<th>Record Number</th>" +
+						"<th>Version Tag</th>" +
 						"<th>Platform</th>" +
 						"<th>Date</th>" +
 						"<th>Time</th>" +
 					"</tr>";
 			for (var i=0;i<dat1.length;++i) {
 				h += "<tr>" +
+						"<td>" + dat1[i]["recordnum"] + "</td>" +
+						"<td>" + dat1[i]["vertag"] + "</td>" +
 						"<td>" + dat1[i]["platform"] + "</td>" +
 						"<td>" + dat1[i]["date"] + "</td>" +
 						"<td>" + dat1[i]["time"] + "</td>" +

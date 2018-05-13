@@ -21,7 +21,7 @@ from myapp import views
 
 urlpatterns = [
 	url(r'^$', views.index, name='index'),
-	url(r'^recnum_search/$', views.recnum_search, name='recnum_search'),
-	url(r'^vertag_search/$', views.vertag_search, name='vertag_search'),
+	url(r'^recnum_search', views.recnum_search, name='recnum_search'),
+	url(r'^vertag_search', views.vertag_search, name='vertag_search'),
     #path('admin/', admin.site.urls),
 ]
