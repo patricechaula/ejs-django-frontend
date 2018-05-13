@@ -55,18 +55,18 @@ function update(dat, dat1) {
 		if (dat.length == 0) h = "<div class='col-lg-4 col-lg-offset-3'>No Results Found in Deploys</div>";
 		else {
 			h = 
-				"<div class='col-lg-4 col-lg-offset-3'>" + 
-				"<table class='table table-striped'>" +
+				// "<div class='col-lg-4 col-lg-offset-3'>" + 
+				"<table class='table table-striped'><thead>" +
 					"<tr>" +
-						"<th>Record Number</th>" +
-						"<th>Version Tag</th>" +
-						"<th>Host Name</th>" +
-						"<th>Date</th>" +
-						"<th>Time</th>" +
-						"<th>OS User</th>" +
-						"<th>PDB</th>" +
-						"<th>Dir</th>" +
-					"</tr>";
+						"<th scope='col'>Record Number</th>" +
+						"<th scope='col'>Version Tag</th>" +
+						"<th scope='col'>Host Name</th>" +
+						"<th scope='col'>Date</th>" +
+						"<th scope='col'>Time</th>" +
+						"<th scope='col'>OS User</th>" +
+						"<th scope='col'>PDB</th>" +
+						"<th scope='col'>Dir</th>" +
+					"</tr></thead><tbody>";
 			for (var i=0;i<dat.length;++i) {
 				h += "<tr>" +
 						"<td>" + dat[i]["recordnum"] + "</td>" +
@@ -79,20 +79,20 @@ function update(dat, dat1) {
 						"<td>" + dat[i]["dir"] + "</td>" +
 					"</tr>";
 			}
-			h += "</table></div>";
+			h += "</tbody></table>";
 		}
 		document.getElementById('search_deploys').innerHTML = h;
-		if (dat1.length == 0) h = "<div class='col-lg-4 col-lg-offset-3'>No Results Found in Tickets</div>";
+		if (dat1.length == 0) h = "<div class='col-lg-5 col-lg-offset-3'>No Results Found in Tickets</div>";
 		else {
 			h = 
-				"<div class='col-lg-4 col-lg-offset-3'>" + 
+				"<div class='col-lg-8 col-lg-offset-2'>" + 
 				"<table class='table table-striped'>" +
 					"<tr>" +
-						"<th>Record Number</th>" +
-						"<th>Version Tag</th>" +
-						"<th>Platform</th>" +
-						"<th>Date</th>" +
-						"<th>Time</th>" +
+						"<th scope='col'>Record Number</th>" +
+						"<th scope='col'>Version Tag</th>" +
+						"<th scope='col'>Platform</th>" +
+						"<th scope='col'>Date</th>" +
+						"<th scope='col'>Time</th>" +
 					"</tr>";
 			for (var i=0;i<dat1.length;++i) {
 				h += "<tr>" +
