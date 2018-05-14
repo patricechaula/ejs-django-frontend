@@ -40,7 +40,7 @@ CREATE TABLE `deploys` (
 
 LOCK TABLES `deploys` WRITE;
 /*!40000 ALTER TABLE `deploys` DISABLE KEYS */;
-INSERT INTO `deploys` VALUES (1231,'tag','host','dir','pdb','ej','2018-01-01','00:09:00'),(1221,'tag','host','dir','pdb','ej','2018-01-01','00:09:00'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:00'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1224,'tag','host','dir','pdb','ej','2018-01-01','00:09:21'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1224,'tag','host','dir','pdb','ej','2018-01-01','00:09:21'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1224,'tag','host','dir','pdb','ej','2018-01-01','00:09:21'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1224,'tag','host','dir','pdb','ej','2018-01-01','00:09:21'),(1223,'tag','host','dir','pdb','ej','2018-01-01','00:09:20'),(1224,'tag','host','dir','pdb','ej','2018-01-01','00:09:21'),(1234,'MYTAX_1.0','APACHE','MYTAX','MYTAX','ej','2018-05-07','14:00:00'),(12345,'TAXING_1.2.3.4','APACHE','TAXING','/VOL1','EJ','2018-05-08','10:57:42'),(55,'TAXING_1.2.3.4','APACHE','TAXING','/VOL1','EJ','2018-05-08','11:01:21'),(55,'TAXING_1.2.3.4','APACHE','TAXING','/VOL1','EJ','2018-05-08','13:48:33');
+INSERT INTO `deploys` VALUES (55,'VERSION_1.2.3.4','APACHE','TAXING','/VOL1','EJ','2018-05-08','11:01:21'),(55,'VERSION_1.2.3.4','APACHE','TAXING','/VOL1','EJ','2018-05-08','13:48:33'),(55,'VERSION_1.2.3.4','APACHE','TAXING','/VOL1','EJ','2018-05-12','23:04:58'),(1234,'TAXING_1.2.3.4','APACHE','TAXING','/VOL1','EJ','2018-05-12','23:05:49'),(1234,'TAXING_1.2.3.4','APACHE','TAXING','/VOL1','EJ','2018-05-12','23:05:51'),(1234,'TAXING_1.2.3.4','APACHE','TAXING','/VOL1','EJ','2018-05-12','23:05:52'),(1234,'TAXING_1.2.3.4','APACHE','TAXING','/VOL1','EJ','2018-05-12','23:05:53'),(1234,'TAXING_1.2.3.33333333333','APACHE3333333333','TAXING33333333333','/VOL1333333333','EJ333333','2018-05-12','23:18:07');
 /*!40000 ALTER TABLE `deploys` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -66,6 +66,7 @@ CREATE TABLE `tickets` (
 
 LOCK TABLES `tickets` WRITE;
 /*!40000 ALTER TABLE `tickets` DISABLE KEYS */;
+INSERT INTO `tickets` VALUES (1234,'TAXING_1.2.3.4','MY TAX TEAM','2018-05-18','14:46:00'),(55,'VERSION_1.2.3.4','VERSIONS','2018-05-14','11:00:00');
 /*!40000 ALTER TABLE `tickets` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -78,4 +79,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-05-12 14:44:41
+-- Dump completed on 2018-05-14 17:54:42
