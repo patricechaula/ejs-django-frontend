@@ -4,10 +4,17 @@
 #                                                                       #
 #########################################################################
 #
+brew install python
+sudo easy_install pip
+sudo easy_install tornado
 python -c "import django; print(django.get_version())"
-pip --version
+python -mpip install matplotlib
+sudo -H pip --version
+sudo -H pip install pystan
+sudo -H pip install nose
 sudo pip install Django
 sudo pip install --upgrade pip
-pip install mysqlclient
+python setup.py install
+sudo pip install mysqlclient
 #python manage.py shell
 python manage.py runserver
