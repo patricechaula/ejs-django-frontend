@@ -25,8 +25,7 @@ SECRET_KEY = 'f2f+k%h)qc=2k5)#4@$gga+_)r*&8u0-zn00au$h!@gy^twnj6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['127.0.0.1', 'apache.erich.com']
 
 # Application definition
 
