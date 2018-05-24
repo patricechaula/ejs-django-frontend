@@ -1,0 +1,1 @@
+CREATE TABLE deploys (RecordNum int, VerTag VARCHAR(25), HostName VARCHAR (25), PDB VARCHAR(25), DIR VARCHAR (25), OSUser VARCHAR (20), Date DATE, Time TIME);
