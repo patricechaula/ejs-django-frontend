@@ -4,17 +4,19 @@
 #                                                                       #
 #########################################################################
 #
-sudo yum -y update
 
-sudo yum -y groupinstall "Development Tools"
 
-sudo yum -y install mysql
-sudo yum -y install mysql-server
+yum -y update
 
-sudo /sbin/chkconfig --add mysqld
-sudo /sbin/chkconfig mysqld on
+yum -y groupinstall "Development Tools"
 
-sudo service mysqld start
+yum -y install mysql
+yum -y install mysql-server
+
+/sbin/chkconfig --add mysqld
+/sbin/chkconfig mysqld on
+
+service mysqld start
 
 
 mysql -uroot <<__EOF__
@@ -34,35 +36,31 @@ export PATH=$PATH:/usr/local/mysql/bin
 PATH=$(printf "%s" "$PATH" | awk -v RS=':' '!a[$1]++ { if (NR > 1) printf RS; printf $1 }')
 echo $PATH
 
-sudo yum install -y python27.x86_64
+yum install -y python27.x86_64
 
-sudo easy_install pip
-sudo easy_install tornado
+easy_install pip
+easy_install tornado
 
-sudo yum -y install MySQL-python27.x86_64
+yum -y install MySQL-python27.x86_64
 
-pip install --upgrade pip
-pip --version
+#pip install --upgrade pip
+python -mpip --version
 
-pip install argparse
+python -mpip install argparse
 #pip install cheetah
-pip install oauth
-pip install PrettyTable
-pip install pyserial
+python -mpip install oauth
+python -mpip install PrettyTable
+python -mpip install pyserial
 
 
-pip install matplotlib
-pip install pystan
-pip install nose
-pip install django
+python -mpip install matplotlib
+python -mpip install pystan
+python -mpip install nose
+python -mpip install django
 
-sudo -H yum -y install  python27-cheetah.x86_64
+yum -y install  python27-cheetah.x86_64
 
 python -c "import django; print(django.get_version())"
 
-#python setup.py install
-#python setup.py egg_info
-
-#python manage.py shell
 python manage.py migrate
-python manage.py runserver
+python manage.py runserver 0.0.0.0:80
