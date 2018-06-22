@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2779970a-edc5-48db-9363-d32850c3b484" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_deploys.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tables.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejs.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/myapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite4.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite4/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite4/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup_up.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/starting_up.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/z_png/ss1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/z_png/ss2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/z_png/ss3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/z_sql/create_deploys.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/z_sql/create_tables.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/z_sql/ejs.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/z_sql/starting_up.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,8 +21,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/myapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+            <state relative-caret-position="375">
+              <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -92,6 +73,24 @@
               <item name="ejs" type="b2602c69:ProjectViewProjectNode" />
               <item name="ejs" type="462c0819:PsiDirectoryNode" />
               <item name="myapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ejs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ejs" type="462c0819:PsiDirectoryNode" />
+              <item name="mysite4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ejs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ejs" type="462c0819:PsiDirectoryNode" />
+              <item name="mysite4" type="462c0819:PsiDirectoryNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ejs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ejs" type="462c0819:PsiDirectoryNode" />
+              <item name="mysite4" type="462c0819:PsiDirectoryNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ejs" type="b2602c69:ProjectViewProjectNode" />
@@ -167,7 +166,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="823" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -396,8 +394,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/myapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        <state relative-caret-position="375">
+          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
