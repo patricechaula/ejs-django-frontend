@@ -63,4 +63,4 @@ yum -y install  python27-cheetah.x86_64
 python -c "import django; print(django.get_version())"
 
 python manage.py migrate
-python manage.py runserver 0.0.0.0:80
+python manage.py runserver 0.0.0.0:100
