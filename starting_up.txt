@@ -1,9 +1,0 @@
-install mysql
-mysql -u root
-mysql > create database ejs
-mysql > 
-mysql > 
-mysql > 
-mysql > CREATE USER 'sa'@'localhost' IDENTIFIED BY 'initial123';
-mysql > GRANT ALL PRIVILEGES ON ejs.* TO 'sa'@'localhost';
-:
