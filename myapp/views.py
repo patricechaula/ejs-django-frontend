@@ -1,8 +1,7 @@
 from django.shortcuts import render
 from django.http import JsonResponse
 
-# Create your views here.
-# This is where the searches are made from
+# Views here
 from myapp.models import Deploys, Tickets
 
 def index(request):
