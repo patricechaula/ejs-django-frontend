@@ -1,0 +1,95 @@
+body{
+  background-image: url("ocean.png");
+  background-size:     cover;                 
+  background-repeat:   no-repeat;
+  background-position: center center;   
+  
+}
+
+/* Here is the css of top box */
+.row1 {
+  height: 91px;
+  border: solid;
+  width: 77.5%;
+  margin-bottom:20px;
+  line-height: 0%;
+  background-color:white;
+  margin: 0 auto;
+  margin-top:20px;
+  
+  margin-bottom:20px;
+  flex: 1; 
+  padding: 1em;
+  
+}
+
+/* Here is the css of bottom box */
+.row2 {
+  height: 91px;
+  border: solid;
+  width: 77.5%;
+  margin-bottom:20px;
+  margin-top:20px;
+  background-color:white;
+  
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  
+  margin-bottom:20px;
+  flex: 1; 
+  padding: 1em;
+  
+}
+
+/* Here is the css of whole middle box row*/
+.row {
+  display: flex; 
+  height: 300px;
+  width:80%;
+  
+  margin: 0 auto;
+  margin-top:20px;
+}
+
+/* Here is the css of both middle box (left and right)*/
+.col {
+  flex: 1; 
+  padding: 1em;
+  border: solid;
+  background-color:white;
+  
+}
+
+
+.p1{
+  float: left;
+  
+}
+
+.p2{
+  float: right;
+}
+
+.p3{
+  margin-top:5px;
+}
+
+.p4{
+  margin-top:-10px;
+  display:inline-block;
+}
+
+.p5{
+  margin-top:5px;
+  display:inline-block;
+}
+
+.divClear{
+  clear: both;
+}
+
+.space{
+  padding: 1em;
+  border: none;
+}
