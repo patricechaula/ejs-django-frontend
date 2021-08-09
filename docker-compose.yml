@@ -1,0 +1,21 @@
+version: "3.9"
+services:
+    db:
+      build: ./mysql
+      volumes:
+        - data:/var/lib/mysql
+      restart: always
+      environment:
+        MYSQL_ROOT_PASSWORD: initial123
+        MYSQL_DATABASE: ejs
+        MYSQL_USER: sa
+        MYSQL_PASSWORD: initial123
+    web:
+      build: .
+      command: gunicorn --bind 0.0.0.0:8000 mysite4.wsgi
+      ports:
+        - "8000:8000"
+      depends_on:
+        - db
+volumes:
+    data:
