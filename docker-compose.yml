@@ -1,7 +1,7 @@
 version: "3.9"
 services:
     db:
-      build: ./mysql
+      build: ./mariadb
       volumes:
         - data:/var/lib/mysql
       restart: always
