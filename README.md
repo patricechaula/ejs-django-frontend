@@ -55,5 +55,32 @@ Now run the following command to run the container in interactive mode.
 
 
 
+### Run mysql database independent.
 
+To run mysql database independently. `cd` into mysql folder.
+
+`$ cd mysql`
+
+`$ chmod +x build_ejs_database.sh`
+
+`$ ./build_ejs_database.sh `
+
+Create an .env file. In this file you will put `MYSQL_ROOT_PASSWORD, MYSQL_DATABASE, MYSQL_USER, MYSQL_PASSWORD`. For example
+
+```
+MYSQL_ROOT_PASSWORD=initial123
+MYSQL_DATABASE=ejs
+MYSQL_USER=sa
+MYSQL_PASSWORD=initial123
+```
+
+`$ chmod +x start_ejs_database.sh`
+
+`$ ./start_ejs_database.sh `
+
+When running `$ ./start_ejs_database.sh ` you will be prompted to configure port mapping. You enter `<hostPort>:3306` mapping. For example `4000:3306`.
+
+Connecting to the database with mysql client.
+
+mysql --host 0.0.0.0 --port 4000 --user <username> -p
 
