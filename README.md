@@ -82,5 +82,4 @@ When running `$ ./start_ejs_database.sh ` you will be prompted to configure port
 
 Connecting to the database with mysql client.
 
-mysql --host 0.0.0.0 --port 4000 --user <username> -p
-
+`$ mysql --host 0.0.0.0 --port 4000 --user <username> -p`
