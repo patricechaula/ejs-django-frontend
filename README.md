@@ -55,9 +55,14 @@ Now run the following command to run the container in interactive mode.
 
 
 
-### Run mysql database independent.
+### Run mysql database independently.
 
-To run mysql database independently. `cd` into mysql folder.
+First you need to create a network 
+
+`$ docker network create ejs`
+
+
+To build mysql database image. `cd` into mysql folder.
 
 `$ cd mysql`
 
@@ -73,6 +78,8 @@ MYSQL_DATABASE=ejs
 MYSQL_USER=sa
 MYSQL_PASSWORD=initial123
 ```
+
+Run.
 
 `$ chmod +x start_ejs_database.sh`
 
