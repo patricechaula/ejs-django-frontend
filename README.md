@@ -104,4 +104,5 @@ Assuming you are in the root folder.
 
 Run.
 `$ chmod +x start_ejs_frontend.sh`
+
 `$ ./start_ejs_frontend.sh`
