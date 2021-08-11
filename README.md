@@ -133,16 +133,24 @@ mysql --host 0.0.0.0 --port 4000 --user <username> -p
 Run the following commands to build the image.
 Assuming you are in the root folder.
 
-```chmod +x build_ejs_frontend.sh```
+```
+chmod +x build_ejs_frontend.sh
+```
 
-```./build_ejs_frontend.sh ```
+```
+./build_ejs_frontend.sh 
+```
 
 
 Run.
 
-```chmod +x start_ejs_frontend.sh```
+```
+chmod +x start_ejs_frontend.sh
+```
 
-```./start_ejs_frontend.sh```
+```
+./start_ejs_frontend.sh
+```
 
 When running `$ ./start_ejs_frontend.sh ` you will be prompted to configure port mapping. You enter `<hostPort>:8000` mapping. For example `8000:8000`.
 
