@@ -82,7 +82,7 @@ mysql> SHOW tables;
 First you need to create a network 
 
 ```
-docker network create ejs
+docker network create --driver=bridge ejs
 ```
 
 
