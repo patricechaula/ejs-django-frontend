@@ -62,7 +62,8 @@ First you need to create a network
 `$ docker network create ejs`
 
 
-To build mysql database image. `cd` into mysql folder.
+To build mysql database image. Assuming you are in the root folder, `cd` into mysql folder.
+
 
 `$ cd mysql`
 
@@ -90,3 +91,17 @@ When running `$ ./start_ejs_database.sh ` you will be prompted to configure port
 Connecting to the database with mysql client.
 
 `$ mysql --host 0.0.0.0 --port 4000 --user <username> -p`
+
+### Run ejs frontend independently.
+
+Run the following commands to build the image.
+Assuming you are in the root folder.
+
+`$ chmod +x build_ejs_frontend.sh`
+
+`$ ./build_ejs_frontend.sh `
+
+
+Run.
+`$ chmod +x start_ejs_frontend.sh`
+`$ ./start_ejs_frontend.sh`
