@@ -79,7 +79,7 @@ DATABASES = {
         'NAME': 'ejs',
         'USER': 'sa',
         'PASSWORD': 'initial123',
-        'HOST': 'db',
+        'HOST': 'ejs_database',
         'PORT': '3306',
     }
 }
